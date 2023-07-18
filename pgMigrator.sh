@@ -28,7 +28,7 @@ USERNAME=$(get_user_input "el nombre de usuario de la base de datos")
 echo "Ingrese la contraseña de la base de datos:"
 read -s PASSWORD
 BACKUP_DIR=$(get_user_input "el directorio donde se almacenarán los respaldos")
-LOG_FILE="/var/log/my_script.log"
+LOG_FILE="/var/log/pgMigrator.log"
 
 # Verifica si el directorio de respaldo existe
 check_directory $BACKUP_DIR
